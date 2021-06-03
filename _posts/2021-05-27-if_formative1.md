@@ -73,7 +73,7 @@ int main(void)
 }
 ~~~
 
-###가위바위보
+### 04. 가위바위보
 
 ~~~c
 #include <stdio.h>
