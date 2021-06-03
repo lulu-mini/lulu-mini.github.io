@@ -75,7 +75,8 @@ int main(void)
 
 ### 04. 가위바위보
 
-~~~c
+~~~c 
+
 #include <stdio.h>
 int main(void) {
   char user, com;
