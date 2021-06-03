@@ -72,3 +72,23 @@ int main(void)
    return 0;
 }
 ~~~
+
+###가위바위보
+
+~~~c
+#include <stdio.h>
+int main(void) {
+  char user, com;
+  com='s';
+
+  printf("r/s/p: ");
+  scanf("%c", &user);
+
+  if(user==com) 
+    printf("비겼다");
+  else if ((com=='r' && user=='s') || (com=='s' && user=='p') || (com=='p' && user=='r'))
+    printf("졌다");
+  else 
+    printf("이겼다");
+    return 0;
+}
