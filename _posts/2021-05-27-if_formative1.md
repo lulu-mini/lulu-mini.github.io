@@ -92,3 +92,4 @@ int main(void) {
     printf("이겼다");
     return 0;
 }
+~~~
