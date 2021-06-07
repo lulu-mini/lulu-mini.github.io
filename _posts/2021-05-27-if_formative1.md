@@ -101,20 +101,23 @@ int main(void) {
 
 #include <stdio.h>
  
-int main(void) {
- int hour, min;
-  scanf("%d %d", &hour, &min);
- if(min>=30)
-  printf("%d시 %d분\n", hour, min-30);
- else
- {
-   if(hour==0)
- printf("%d시 %d분\n", 23, min+30);
- else
-  printf("%d시 %d분\n", hour-1, min+30);
- }
+int main(void)
+{
+ double a, b, c;
+ int d, e, f;
+ double score;
+ printf("***과목별 점수 계산 프로그램***\n");
+ printf("중간고사 반영비율/받은 점수를 입력하세요 :\n ");
+ scanf("%lf %d", &a, &d);
+ printf("기말고사 반영비율/받은 점수를 입력하세요 :\n ");
+ scanf("%lf %d", &b, &e);
+ printf("수행평가 반영비율/받은 점수를 입력하세요 :\n ");
+ scanf("%lf %d", &c, &f);
+ score =a*d+b*e+c*f;
+ printf("점수는 %.1f 입니다.\n",score);
  return 0;
- }
+}
+
 ~~~
 
 ### 06. 보안 인증
