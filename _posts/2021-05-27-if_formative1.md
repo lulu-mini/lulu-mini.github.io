@@ -146,4 +146,64 @@ int main()
  printf("*******************\n");
    return 0;
 }
+~~~   
+
+### 07. 30분 전
+
+~~~c  
+
+#include <stdio.h>
+ 
+int main(void) {
+ int hour, min;
+  scanf("%d %d", &hour, &min);
+ if(min>=30)
+  printf("%d시 %d분\n", hour, min-30);
+ else
+ {
+   if(hour==0)
+ printf("%d시 %d분\n", 23, min+30);
+ else
+  printf("%d시 %d분\n", hour-1, min+30);
+ }
+ return 0;
+ }
+~~~  
+
+###07. 도어락
+
+~~~c  
+
+#include <stdio.h>
+
+int main(void) {
+  char ic;
+  int pw;
+  double pf;
+  int method;
+  printf("ic카드(1)나 비밀번호(2)나 지문(3) 중 인증 방법을 선택하세요 :");
+  scanf("%d", &method);
+  if (method==1){
+    printf("ic카드 :");
+   scanf(" %c", &ic);
+     if (ic=='c')
+     {printf("문 열림~");}
+     else
+     {printf("디리릭!");}}
+  if(method==2) {
+    printf("비밀번호 :");
+    scanf(" %d", &pw);
+    if (pw==24689)
+      printf("문 열림~");
+    else 
+    printf("디리릭!"); }
+  if(method==3)
+    printf("지문 :");
+    scanf("%lf", &pf);
+    if (pf==1.2345678)
+      printf("문 열림~");
+    else
+      printf("디리릭!");
+  return 0;
+}
 ~~~
