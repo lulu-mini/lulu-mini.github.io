@@ -177,33 +177,30 @@ int main(void) {
 #include <stdio.h>
 
 int main(void) {
-  char ic;
-  int pw;
-  double pf;
-  int method;
-  printf("ic카드(1)나 비밀번호(2)나 지문(3) 중 인증 방법을 선택하세요 :");
-  scanf("%d", &method);
-  if (method==1){
-    printf("ic카드 :");
-   scanf(" %c", &ic);
-     if (ic=='c')
-     {printf("문 열림~");}
-     else
-     {printf("디리릭!");}}
-  if(method==2) {
-    printf("비밀번호 :");
-    scanf(" %d", &pw);
-    if (pw==24689)
-      printf("문 열림~");
-    else 
-    printf("디리릭!"); }
-  if(method==3)
-    printf("지문 :");
-    scanf("%lf", &pf);
-    if (pf==1.2345678)
-      printf("문 열림~");
-    else
-      printf("디리릭!");
+  int select;
+  char dic='c', ic;
+  int dpw=24680, pw;
+  double dfin=1.2345678, fin;
+  
+  printf("장치 선택: ");
+  scanf("%d", &select);
+  
+  if(select==1){
+    printf("IC 카드: ");
+    scanf(" %c", &ic);
+  }else if(select==2){
+    printf("비밀번호: ");
+    scanf("%d", &pw);
+  }else{
+    printf("지문: ");
+    scanf("%lf", &fin);
+  }
+  
+  if(dic==ic || dpw==pw || dfin==fin){
+    printf("문 열림~");
+  }else{
+    printf("디리릭!디리릭!");
+  }
   return 0;
 }
 ~~~
