@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "C" 
+title: "C 😈" 
 toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차" 
