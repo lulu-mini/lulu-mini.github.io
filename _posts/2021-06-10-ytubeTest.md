@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "내가 좋아하는" 
+title: "My favorite" 
 ---
 
 {% include video id="E76mBgRD93OVYQAd" provider="youtube" %}
