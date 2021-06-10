@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "My favorite ( *ฅ́˘ฅ̀*)" 
+title: "My favorite 💖" 
 ---
 
-{% include video id="E76mBgRD93OVYQAd" provider="youtube" %}
+{% include video id="F-sdb3iKSxpxCH-5" provider="youtube" %}
