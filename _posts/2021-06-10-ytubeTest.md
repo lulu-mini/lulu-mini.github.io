@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "유튜브 동영상 삽입하기" 
+title: "내가 좋아하는" 
 ---
 
 {% include video id="U9qT3HMkECqQEx5N" provider="youtube" %}
