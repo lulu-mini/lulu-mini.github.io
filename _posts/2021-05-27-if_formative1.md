@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "수행평가 정리" 
+title: "C" 
 toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차" 
